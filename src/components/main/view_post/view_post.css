@@ -1,0 +1,22 @@
+#posts_container {
+  padding: 10px;
+}
+.post {
+  display: inline-block;
+
+  width: 400px;
+  padding: 10px;
+  vertical-align: top;
+  margin: 10px;
+  box-sizing: border-box;
+}
+.post_title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+.posts_body {
+  margin: 0;
+}

@@ -1,17 +1,17 @@
-export const VIEW_POST_BEGIN = "VIEW_POST_BEGIN";
-export const VIEW_POST_SUCCESS = "VIEW_POST_Success";
-export const VIEW_POST_ERROR = "VIEW_POST_Error";
+export const FETCH_POST_BEGIN = "FETCH_POST_BEGIN";
+export const FETCH_POST_SUCCESS = "FETCH_POST_SUCCESS";
+export const FETCH_POST_ERROR = "FETCH_POST_ERROR";
 
-export const viewPostBegin = () => ({
-  type: VIEW_POST_BEGIN
+export const fetchPostBegin = () => ({
+  type: FETCH_POST_BEGIN
 });
 
-export const viewPostSuccess = posts => ({
-  type: viewPostSuccess,
+export const fetchPostSuccess = posts => ({
+  type: FETCH_POST_SUCCESS,
   payload: { posts }
 });
 
-export const viewPostError = error => ({
-  type: viewPostError,
+export const fetchPostError = error => ({
+  type: FETCH_POST_ERROR,
   payload: { error }
 });

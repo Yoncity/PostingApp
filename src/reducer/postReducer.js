@@ -1,7 +1,7 @@
 import {
-  VIEW_POST_BEGIN,
-  VIEW_POST_SUCCESS,
-  VIEW_POST_ERROR
+  FETCH_POST_BEGIN,
+  FETCH_POST_SUCCESS,
+  FETCH_POST_ERROR
 } from "../action/postAction";
 
 const initialState = {
@@ -10,17 +10,17 @@ const initialState = {
 
 export default function postReducer(state = initialState, action) {
   switch (action.type) {
-    case VIEW_POST_BEGIN:
+    case FETCH_POST_BEGIN:
       return { ...state, loading: true };
 
-    case VIEW_POST_SUCCESS:
+    case FETCH_POST_SUCCESS:
       return {
         ...state,
         loading: false,
         posts: action.payload.posts
       };
 
-    case VIEW_POST_ERROR:
+    case FETCH_POST_ERROR:
       return {
         ...state,
         loading: false,
