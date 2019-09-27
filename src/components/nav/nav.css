@@ -1,0 +1,23 @@
+#my_nav {
+  background: #888;
+  padding: 5px;
+}
+#logo {
+  display: inline-block;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+#settings {
+  float: right;
+  padding: 5px;
+}
+#profile {
+  background: #eee;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 10px;
+}
