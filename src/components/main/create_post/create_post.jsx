@@ -30,7 +30,7 @@ class CreatePost extends Component {
     if (title && body) {
       try {
         this.props.addPostBegin();
-        tmp.push({ title, body });
+        tmp.unshift({ title, body });
         this.props.addPostSuccess(tmp);
         this.props.clearPostFields();
         console.log(tmp);
