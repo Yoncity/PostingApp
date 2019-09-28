@@ -70,7 +70,7 @@ class CreatePost extends Component {
               type="textarea"
               name="post_data"
               onChange={this.getPostInput}
-              placeholder="Write Article"
+              placeholder="Write Something.."
             />
             <input type="submit" onClick={this.postArticle} value="POST" />
           </div>
