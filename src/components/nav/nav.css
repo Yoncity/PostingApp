@@ -1,23 +1,25 @@
 #my_nav {
-  background: #888;
+  background: #21273d;
   padding: 5px;
 }
 #logo {
   display: inline-block;
   padding: 20px;
-  font-size: 20px;
-  font-weight: bold;
+  margin-left: 15px;
+  font-size: 26px;
   box-sizing: border-box;
+  color: #fff;
 }
 #settings {
   float: right;
   padding: 5px;
 }
 #profile {
-  background: #eee;
+  background: #fff;
   display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
   padding: 10px;
+  border-radius: 50%;
 }
