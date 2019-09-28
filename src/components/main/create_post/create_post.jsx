@@ -25,15 +25,24 @@ class CreatePost extends Component {
 
   postArticle = () => {
     const { title, body } = this.props.post_fields;
-    console.log(title);
     let tmp = this.props.posts;
     if (title && body) {
       try {
         this.props.addPostBegin();
-        tmp.unshift({ title, body });
-        this.props.addPostSuccess(tmp);
-        this.props.clearPostFields();
-        console.log(tmp);
+
+        fetch("https://jsonplaceholder.typicode.com/posts", {
+          method: "POST",
+          body: JSON.stringify({ title, body }),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8"
+          }
+        })
+          .then(response => response.json())
+          .then(json => {
+            tmp.unshift({ title, body });
+            this.props.addPostSuccess(tmp);
+            this.props.clearPostFields();
+          });
       } catch (error) {
         this.props.addPostError(error);
       }
